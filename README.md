@@ -104,7 +104,6 @@ The main portfolio deploys differently (see its [README](https://github.com/rona
 
 - GitHub: [@ronakmaniya](https://github.com/ronakmaniya)
 - LinkedIn: [ronak-maniya](https://linkedin.com/in/ronak-maniya)
-- Email: [hello@ronakmaniya.dev](mailto:hello@ronakmaniya.dev)
 - Main portfolio: [ronak-maniya.vercel.app](https://ronak-maniya.vercel.app/)
 
 ## 📄 License
