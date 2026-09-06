@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ronak Maniya — Full-Stack Developer</title>
+  <meta name="description" content="Portfolio of Ronak Maniya, a full-stack developer building fast, modern web experiences." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&lt;/&gt;</text></svg>" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--one" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--two" aria-hidden="true"></div>
+
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#home" class="nav__logo">ronak<span>.</span>dev</a>
+      <ul class="nav__menu" id="nav-menu">
+        <li><a href="#home" class="nav__link active">Home</a></li>
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#skills" class="nav__link">Skills</a></li>
+        <li><a href="#projects" class="nav__link">Projects</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+      <div class="nav__actions">
+        <a href="#contact" class="btn btn--primary nav__cta">Hire Me</a>
+        <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero section">
+      <div class="container hero__inner">
+        <div class="hero__badge reveal"><span class="hero__badge-dot"></span>Available for new projects</div>
+        <p class="hero__greeting reveal">Hi, my name is</p>
+        <h1 class="hero__name reveal">Ronak Maniya<span class="accent">.</span></h1>
+        <h2 class="hero__role reveal">I build things for the <span class="typed accent" id="typed"></span><span class="cursor">|</span></h2>
+        <p class="hero__blurb reveal">
+          Full-stack developer focused on crafting fast, accessible and delightful
+          products for the web. I turn complex problems into simple, beautiful interfaces.
+        </p>
+        <div class="hero__actions reveal">
+          <a href="#projects" class="btn btn--primary">View My Work</a>
+          <a href="#contact" class="btn btn--ghost">Get In Touch
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+        </div>
+        <div class="hero__socials reveal">
+          <a href="https://github.com/ronakmaniya" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2.17c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.69 1.25 3.34.95.1-.74.4-1.25.72-1.53-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.78 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.7 5.39-5.26 5.68.41.35.77 1.05.77 2.12v3.14c0 .31.21.68.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+          </a>
+          <a href="https://linkedin.com/in/ronak-maniya" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
+          </a>
+          <a href="mailto:hello@ronakmaniya.dev" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+          </a>
+        </div>
+      </div>
+      <a href="#about" class="scroll-hint" aria-label="Scroll to about section">
+        <span></span>
+      </a>
+    </section>
+
+    <section id="about" class="section section--dots">
+      <div class="container">
+        <h2 class="section__title reveal"><span class="accent">01.</span> About Me</h2>
+        <p class="section__subtitle reveal">Get to know the person behind the code.</p>
+        <div class="about">
+          <div class="about__text reveal">
+            <p class="about__lead">
+              Hello! I'm Ronak — a developer living at the intersection of
+              <strong>design</strong> and <strong>engineering</strong>.
+            </p>
+            <p>
+              My journey started with tinkering with websites, and it grew into a passion
+              for building complete products — from pixel-perfect frontends to reliable
+              backends.
+            </p>
+            <p>
+              Today I work primarily with JavaScript, TypeScript and modern web frameworks.
+              I care deeply about performance, clean architecture and shipping software
+              that people genuinely enjoy using.
+            </p>
+            <blockquote class="about-quote">
+              "Simplicity is the soul of good software — every line should earn its place."
+            </blockquote>
+          </div>
+          <div class="about__stats reveal">
+            <div class="about__monogram" aria-hidden="true"><span class="accent">RM</span></div>
+            <div class="stat-card">
+              <span class="stat-card__num" data-count="3" data-suffix="+">0+</span>
+              <span class="stat-card__label">Years of Experience</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card__num" data-count="25" data-suffix="+">0+</span>
+              <span class="stat-card__label">Projects Completed</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card__num" data-count="15" data-suffix="+">0+</span>
+              <span class="stat-card__label">Happy Clients</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card__num">&infin;</span>
+              <span class="stat-card__label">Cups of Chai</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline__item reveal">
+            <span class="timeline__dot"></span>
+            <span class="timeline__year">2022</span>
+            <h3>The beginning</h3>
+            <p>Fell in love with the web — HTML, CSS, JavaScript and countless late-night tutorials.</p>
+          </div>
+          <div class="timeline__item reveal">
+            <span class="timeline__dot"></span>
+            <span class="timeline__year">2023</span>
+            <h3>First clients</h3>
+            <p>Freelancing landing pages and dashboards for local businesses and startups.</p>
+          </div>
+          <div class="timeline__item reveal">
+            <span class="timeline__dot"></span>
+            <span class="timeline__year">2024</span>
+            <h3>Going full-stack</h3>
+            <p>React, Node.js and databases — shipping complete products end to end.</p>
+          </div>
+          <div class="timeline__item reveal">
+            <span class="timeline__dot"></span>
+            <span class="timeline__year">Today</span>
+            <h3>Leveling up</h3>
+            <p>TypeScript everywhere, cloud deploys, open source and mentoring devs.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section section--stripes">
+      <div class="container">
+        <h2 class="section__title reveal"><span class="accent">02.</span> Skills</h2>
+        <p class="section__subtitle reveal">My toolbox, measured honestly.</p>
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <div class="skill-card__head">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M2 8h20"/><path d="M6 6h.01"/></svg>
+              <div>
+                <h3>Frontend</h3>
+                <p>Clean, responsive interfaces</p>
+              </div>
+            </div>
+            <ul class="skill-list">
+              <li class="skill-item">
+                <div class="skill-meta"><span>HTML / CSS</span><span>95%</span></div>
+                <div class="skill-track"><div class="skill-fill" data-level="95"></div></div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-meta"><span>JavaScript / TypeScript</span><span>90%</span></div>
+                <div class="skill-track"><div class="skill-fill" data-level="90"></div></div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-meta"><span>React / Next.js</span><span>88%</span></div>
+                <div class="skill-track"><div class="skill-fill" data-level="88"></div></div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-meta"><span>Tailwind CSS</span><span>85%</span></div>
+                <div class="skill-track"><div class="skill-fill" data-level="85"></div></div>
+              </li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-card__head">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.66 3.58 3 8 3s8-1.34 8-3V5"/><path d="M4 11v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6"/></svg>
+              <div>
+                <h3>Backend</h3>
+                <p>Reliable APIs &amp; data layers</p>
+              </div>
+            </div>
+            <ul class="skill-list">
+              <li class="skill-item">
+                <div class="skill-meta"><span>Node.js / Express</span><span>87%</span></div>
+                <div class="skill-track"><div class="skill-fill" data-level="87"></div></div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-meta"><span>PostgreSQL</span><span>82%</span></div>
+                <div class="skill-track"><div class="skill-fill" data-level="82"></div></div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-meta"><span>MongoDB</span><span>80%</span></div>
+                <div class="skill-track"><div class="skill-fill" data-level="80"></div></div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-meta"><span>Python / FastAPI</span><span>78%</span></div>
+                <div class="skill-track"><div class="skill-fill" data-level="78"></div></div>
+              </li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-card__head">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m12 2 2.4 4.86L20 7.7l-4 3.9.94 5.5L12 14.5l-4.94 2.6L8 11.6l-4-3.9 5.6-.84L12 2z"/></svg>
+              <div>
+                <h3>Tools &amp; Workflow</h3>
+                <p>Shipping with confidence</p>
+              </div>
+            </div>
+            <ul class="skill-list">
+              <li class="skill-item">
+                <div class="skill-meta"><span>Git / GitHub</span><span>92%</span></div>
+                <div class="skill-track"><div class="skill-fill" data-level="92"></div></div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-meta"><span>Docker / CI-CD</span><span>76%</span></div>
+                <div class="skill-track"><div class="skill-fill" data-level="76"></div></div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-meta"><span>Figma</span><span>72%</span></div>
+                <div class="skill-track"><div class="skill-fill" data-level="72"></div></div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-meta"><span>Jest / Vitest</span><span>74%</span></div>
+                <div class="skill-track"><div class="skill-fill" data-level="74"></div></div>
+              </li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="skills-extra reveal">
+          <h3>Also familiar with</h3>
+          <div class="chips">
+            <span>REST APIs</span><span>GraphQL</span><span>Redis</span><span>Prisma</span>
+            <span>Vite</span><span>Vercel</span><span>AWS Basics</span><span>Linux</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section__title reveal"><span class="accent">03.</span> Projects</h2>
+        <p class="section__subtitle reveal">A few things I've built recently.</p>
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <a class="project-thumb project-thumb--one" href="https://github.com/ronakmaniya" target="_blank" rel="noopener" aria-label="View DevBoard on GitHub">
+              <span class="project-thumb__num">01</span>
+              <svg class="project-thumb__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2v11z"/></svg>
+              <span class="project-thumb__cta">View project
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </span>
+            </a>
+            <div class="project-card__body">
+              <h3 class="project-card__title">DevBoard</h3>
+              <p class="project-card__desc">A real-time project management dashboard with drag-and-drop tasks, team collaboration and live notifications.</p>
+              <div class="project-card__foot">
+                <div class="chips chips--sm">
+                  <span>React</span><span>Node.js</span><span>Socket.io</span><span>PostgreSQL</span>
+                </div>
+                <div class="project-card__links">
+                  <a href="https://github.com/ronakmaniya" target="_blank" rel="noopener" aria-label="DevBoard source code">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2.17c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.69 1.25 3.34.95.1-.74.4-1.25.72-1.53-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.78 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.7 5.39-5.26 5.68.41.35.77 1.05.77 2.12v3.14c0 .31.21.68.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+                  </a>
+                  <a href="https://github.com/ronakmaniya" target="_blank" rel="noopener" aria-label="DevBoard live demo">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <a class="project-thumb project-thumb--two" href="https://github.com/ronakmaniya" target="_blank" rel="noopener" aria-label="View ShopSwift on GitHub">
+              <span class="project-thumb__num">02</span>
+              <svg class="project-thumb__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+              <span class="project-thumb__cta">View project
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </span>
+            </a>
+            <div class="project-card__body">
+              <h3 class="project-card__title">ShopSwift</h3>
+              <p class="project-card__desc">Full-featured e-commerce platform with cart, Stripe payments, admin panel and inventory management.</p>
+              <div class="project-card__foot">
+                <div class="chips chips--sm">
+                  <span>Next.js</span><span>TypeScript</span><span>Stripe</span><span>MongoDB</span>
+                </div>
+                <div class="project-card__links">
+                  <a href="https://github.com/ronakmaniya" target="_blank" rel="noopener" aria-label="ShopSwift source code">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2.17c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.69 1.25 3.34.95.1-.74.4-1.25.72-1.53-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.78 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.7 5.39-5.26 5.68.41.35.77 1.05.77 2.12v3.14c0 .31.21.68.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+                  </a>
+                  <a href="https://github.com/ronakmaniya" target="_blank" rel="noopener" aria-label="ShopSwift live demo">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <a class="project-thumb project-thumb--three" href="https://github.com/ronakmaniya" target="_blank" rel="noopener" aria-label="View Snippetly on GitHub">
+              <span class="project-thumb__num">03</span>
+              <svg class="project-thumb__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              <span class="project-thumb__cta">View project
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </span>
+            </a>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Snippetly</h3>
+              <p class="project-card__desc">A minimal code snippet library with syntax highlighting, tagging and instant search for developers.</p>
+              <div class="project-card__foot">
+                <div class="chips chips--sm">
+                  <span>SvelteKit</span><span>Python</span><span>FastAPI</span><span>Docker</span>
+                </div>
+                <div class="project-card__links">
+                  <a href="https://github.com/ronakmaniya" target="_blank" rel="noopener" aria-label="Snippetly source code">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2.17c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.69 1.25 3.34.95.1-.74.4-1.25.72-1.53-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.78 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.7 5.39-5.26 5.68.41.35.77 1.05.77 2.12v3.14c0 .31.21.68.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+                  </a>
+                  <a href="https://github.com/ronakmaniya" target="_blank" rel="noopener" aria-label="Snippetly live demo">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="projects-more reveal">
+          <a href="https://github.com/ronakmaniya" target="_blank" rel="noopener" class="btn btn--ghost">See More on GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section--rings contact">
+      <div class="container contact__inner">
+        <h2 class="section__title reveal"><span class="accent">04.</span> What's Next?</h2>
+        <p class="contact__headline reveal">Have an idea?<br /><span class="accent">Let's build it together.</span></p>
+        <p class="contact__blurb reveal">
+          I'm currently open to freelance projects and full-time opportunities.
+          Whether you have a question or just want to say hi — my inbox is always open!
+        </p>
+
+        <div class="contact-card reveal">
+          <aside class="contact-info">
+            <h3>Contact information</h3>
+            <p class="contact-info__sub">Fill out the form and I'll get back to you within 24 hours.</p>
+            <ul>
+              <li>
+                <span class="contact-info__icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+                </span>
+                <div class="contact-info__data">
+                  <span class="contact-info__label">Email</span>
+                  <a href="mailto:hello@ronakmaniya.dev">hello@ronakmaniya.dev</a>
+                  <button class="copy-btn" id="copy-email" type="button" aria-label="Copy email address">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                    Copy
+                  </button>
+                </div>
+              </li>
+              <li>
+                <span class="contact-info__icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                </span>
+                <div class="contact-info__data">
+                  <span class="contact-info__label">Location</span>
+                  <span>Remote · India</span>
+                </div>
+              </li>
+              <li>
+                <span class="contact-info__icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                </span>
+                <div class="contact-info__data">
+                  <span class="contact-info__label">Availability</span>
+                  <span class="contact-status"><span class="status-dot"></span>Open for projects</span>
+                </div>
+              </li>
+            </ul>
+            <div class="contact-socials">
+              <a href="https://github.com/ronakmaniya" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2.17c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.69 1.25 3.34.95.1-.74.4-1.25.72-1.53-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.78 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.7 5.39-5.26 5.68.41.35.77 1.05.77 2.12v3.14c0 .31.21.68.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+              </a>
+              <a href="https://linkedin.com/in/ronak-maniya" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
+              </a>
+              <a href="mailto:hello@ronakmaniya.dev" aria-label="Email">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+              </a>
+            </div>
+          </aside>
+
+          <form class="contact-form" id="contact-form">
+            <div class="form-row">
+              <input type="text" name="name" placeholder="Your name" required aria-label="Your name" />
+              <input type="email" name="email" placeholder="Your email" required aria-label="Your email" />
+            </div>
+            <textarea name="message" rows="5" placeholder="Tell me about your project..." required aria-label="Message"></textarea>
+            <button type="submit" class="btn btn--primary">Send Message
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m22 2-7 20-4-9-9-4 20-7z"/><path d="M22 2 11 13"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="#home" class="nav__logo">ronak<span>.</span>dev</a>
+          <p>Crafting fast, accessible and delightful web experiences — from first sketch to final deploy.</p>
+          <div class="footer__socials">
+            <a href="https://github.com/ronakmaniya" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2.17c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.69 1.25 3.34.95.1-.74.4-1.25.72-1.53-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.78 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.7 5.39-5.26 5.68.41.35.77 1.05.77 2.12v3.14c0 .31.21.68.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+            </a>
+            <a href="https://linkedin.com/in/ronak-maniya" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
+            </a>
+            <a href="mailto:hello@ronakmaniya.dev" aria-label="Email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h3>Navigate</h3>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h3>Say hello</h3>
+          <ul>
+            <li><a href="mailto:hello@ronakmaniya.dev">hello@ronakmaniya.dev</a></li>
+            <li>Remote · India</li>
+            <li><span class="contact-status"><span class="status-dot"></span>Open for projects</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; <span id="year"></span> Ronak Maniya. All rights reserved.</p>
+        <p class="footer__made">Designed &amp; built with <span class="accent">&hearts;</span> and too much chai</p>
+      </div>
+    </div>
+    <div class="footer__watermark" aria-hidden="true">RONAK</div>
+  </footer>
+
+  <button class="to-top" id="to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m18 15-6-6-6 6"/></svg>
+  </button>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
