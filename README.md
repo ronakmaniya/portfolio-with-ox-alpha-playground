@@ -1,86 +1,116 @@
-# ronak.dev — Portfolio
+# ✨ ronak.dev — Static Portfolio Demo
 
-> 🌐 **Live Demo:** https://ronakmaniya.github.io/portfolio-with-ox-alpha-playground/
+![Live](https://img.shields.io/badge/Live-GitHub_Pages-7c6cff?style=for-the-badge&logo=github)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![No Build](https://img.shields.io/badge/No_Build-Required-2dd4a7?style=flat-square)
 
-A fast, responsive, single-page developer portfolio for **Ronak Maniya**, built with pure HTML, CSS, and JavaScript. No frameworks, no build step — just open and deploy.
+A fast, responsive, single-page **demo portfolio** for **Ronak Maniya** — built with pure HTML, CSS, and vanilla JavaScript. No frameworks, no build step.
+
+> 🌐 **Live Demo (this repo):** https://ronakmaniya.github.io/portfolio-with-ox-alpha-playground/
+>
+> 💼 **Looking for my main portfolio?** It's here → https://ronak-maniya.vercel.app/ ([source](https://github.com/ronakmaniya/My-Portfolio-Ronak-2.0))
+
+---
+
+## 📌 About This Repo
+
+This repository (`portfolio-with-ox-alpha-playground`) is a **lightweight static playground / demo** — ideal for experimenting with layout, animations, and responsive design without a backend.
+
+My **production portfolio** is a separate full-stack project with a blog, projects API, and admin panel:
+
+| Project | Live | Source | Stack |
+|---------|------|--------|-------|
+| **Main Portfolio 2.0** (production) | [ronak-maniya.vercel.app](https://ronak-maniya.vercel.app/) | [My-Portfolio-Ronak-2.0](https://github.com/ronakmaniya/My-Portfolio-Ronak-2.0) | React + Vite, Django DRF, PostgreSQL |
+| **Backend API** | [API on Render](https://my-portfolio-ronak-2-0-backend.onrender.com/) | Same repo (`/backend`) | Django + DRF, Cloudinary |
+| **Legacy Portfolio v1** (archived static) | — | [My-Portfolio-Ronak](https://github.com/ronakmaniya/My-Portfolio-Ronak) | HTML / CSS / JS |
+| **This Demo** (you are here) | [GitHub Pages](https://ronakmaniya.github.io/portfolio-with-ox-alpha-playground/) | [portfolio-with-ox-alpha-playground](https://github.com/ronakmaniya/portfolio-with-ox-alpha-playground) | HTML / CSS / JS |
+
+> **Recruiters / visitors:** please evaluate me on the **Main Portfolio 2.0** above. This repo is for practice, UI experiments, and quick static hosting demos.
+
+---
 
 ## ✨ Features
 
-- **Hero section** — availability badge, typing animation (`web. / web apps. / APIs. / UIs. / experiences.`), CTA buttons, social links
-- **Sticky navbar** — scroll blur + gradient border, scroll-progress bar, active-link highlighting, mobile hamburger menu
-- **About** — intro, pull-quote, animated stat counters (3+ years, 25+ projects, 15+ clients), 4-step journey timeline (2022 → Today)
-- **Skills** — 3 cards (Frontend / Backend / Tools & Workflow) with animated progress bars + "also familiar with" chips
-- **Projects** — 3 cards (DevBoard, ShopSwift, Snippetly) with gradient art thumbnails, tech chips, GitHub + live-demo links
-- **Contact** — info panel (email + copy button, location, availability) + mailto contact form with toast notifications
-- **Footer** — nav, contact summary, giant `RONAK` watermark, back-to-top button
-- **Polish** — dark theme (`#0a0a10` + `#7c6cff` accent), Space Grotesk + Inter fonts, scroll-reveal animations, `prefers-reduced-motion` support, fully responsive
+- **Hero** — availability badge, typing animation (`web. / web apps. / APIs. / UIs. / experiences.`), CTAs, GitHub / LinkedIn / Email links
+- **Navbar** — sticky glass effect, gradient border, scroll-progress bar, active-section highlight, mobile hamburger menu
+- **About** — bio, design×engineering pull-quote, animated counters (3+ years, 25+ projects, 15+ clients), 2022 → Today timeline
+- **Skills** — Frontend / Backend / Tools cards with scroll-triggered progress bars + extra tech chips
+- **Projects** — DevBoard, ShopSwift, Snippetly cards with gradient art thumbnails, tech chips, source + demo links
+- **Contact** — info panel (copy-email button, location, availability) + `mailto:` form with toast feedback
+- **Footer** — sitemap, contact summary, giant `RONAK` watermark, back-to-top button
+- **Polish** — dark theme (`#0a0a10` / `#7c6cff`), Space Grotesk + Inter, scroll-reveal, `prefers-reduced-motion` support, fully responsive
 
 ## 🛠️ Tech Stack
 
-| Layer | Tech |
-|-------|------|
-| Markup | HTML5 (semantic, accessible) |
-| Styling | Vanilla CSS3 (custom properties, grid/flex, animations) |
-| Logic | Vanilla JavaScript (IntersectionObserver, typed effect, counters) |
-| Fonts | Google Fonts — Space Grotesk + Inter |
-| Assets | Inline SVG icons (no image dependencies) |
+| Layer | Details |
+|-------|---------|
+| Markup | Semantic HTML5, accessible labels |
+| Styling | Vanilla CSS3 — custom properties, Grid/Flex, keyframe animations |
+| Logic | Vanilla JS — IntersectionObserver, typed effect, counters, toast |
+| Fonts | Google Fonts (Space Grotesk + Inter) |
+| Icons | Inline SVG (zero image dependencies) |
+| Hosting | GitHub Pages (this demo) · Vercel + Render (main portfolio) |
 
 ## 📁 Project Structure
 
 ```
-ox-playground/
-├── index.html   # All sections: hero, about, skills, projects, contact, footer
-├── styles.css   # Theme, layout, components, responsive breakpoints
-├── script.js    # Nav, scroll, typing, reveal, skills, counters, form, toast
-└── README.md    # This file
+portfolio-with-ox-alpha-playground/
+├── index.html   # Hero, About, Skills, Projects, Contact, Footer
+├── styles.css   # Theme, layout, components, breakpoints
+├── script.js    # Nav, scroll, typing, reveal, bars, counters, form
+└── README.md
 ```
 
-## 🚀 Getting Started
-
-No install needed.
+## 🚀 Quick Start
 
 ```bash
-# 1. Clone the repo
-git clone https://github.com/<your-username>/<your-repo>.git
-cd <your-repo>
+# Clone
+git clone https://github.com/ronakmaniya/portfolio-with-ox-alpha-playground.git
+cd portfolio-with-ox-alpha-playground
 
-# 2. Run locally — just open the file
-# Option A: double-click index.html
-# Option B: VS Code Live Server
-# Option C: any static server
+# Run — pick one, no install needed
 npx serve .
 # or
 python -m http.server 8000
+# or just double-click index.html
 ```
 
-Then visit `http://localhost:8000` (or whichever port is shown).
+Open `http://localhost:8000` (or the port shown).
 
-## 🌐 Deploy
+## 🌐 Deployment
 
-This is a static site — deploy anywhere:
+This demo is already live via **GitHub Pages** (`main` → `/`):
 
-**GitHub Pages (free, recommended for portfolios):**
-1. Push this repo to GitHub
-2. Go to repo → `Settings` → `Pages`
-3. Source: `Deploy from a branch` → `main` / `(root)` → Save
-4. Your site goes live at `https://<your-username>.github.io/<your-repo>/`
+- Live URL: https://ronakmaniya.github.io/portfolio-with-ox-alpha-playground/
+- To redeploy: just `git push origin main` — Pages rebuilds in ~1 min.
+- To deploy your own fork: repo → `Settings` → `Pages` → `Deploy from a branch` → `main` / `(root)`.
 
-**Netlify / Vercel:**
-- Drag-and-drop the folder, or connect the GitHub repo. No build command needed. Publish directory: `.`
+The main portfolio deploys differently (see its [README](https://github.com/ronakmaniya/My-Portfolio-Ronak-2.0)): frontend on **Vercel** (`npm run build` → `dist`), backend on **Render** (`gunicorn core.wsgi`).
 
 ## 🎨 Customization
 
-- **Name / links:** search `ronakmaniya` in `index.html` and replace GitHub, LinkedIn, and `hello@ronakmaniya.dev` with yours.
-- **Projects:** edit the 3 `.project-card` blocks in `index.html` (title, description, chips, links).
-- **Skills:** edit `.skill-fill[data-level]` values + labels in `index.html`.
-- **Stats:** edit `.stat-card__num[data-count]` values in `index.html`.
-- **Theme:** tweak CSS variables in `styles.css` (`--bg`, `--accent`, `--gradient`, etc.).
-- **Typing words:** edit the `phrases` array in `script.js`.
+- **Identity/links:** search `ronakmaniya` in `index.html` → replace GitHub, LinkedIn, `hello@ronakmaniya.dev`.
+- **Projects:** edit the three `.project-card` blocks (title, description, chips, URLs).
+- **Skills:** edit labels + `.skill-fill[data-level]` percentages.
+- **Stats:** edit `.stat-card__num[data-count]` values.
+- **Theme:** tweak `:root` vars in `styles.css` (`--bg`, `--accent`, `--gradient`, …).
+- **Typing:** edit the `phrases` array in `script.js`.
+
+## 👤 Author
+
+**Ronak Maniya** — Full-Stack Developer (Remote · India)
+
+- GitHub: [@ronakmaniya](https://github.com/ronakmaniya)
+- LinkedIn: [ronak-maniya](https://linkedin.com/in/ronak-maniya)
+- Email: [hello@ronakmaniya.dev](mailto:hello@ronakmaniya.dev)
+- Main portfolio: [ronak-maniya.vercel.app](https://ronak-maniya.vercel.app/)
 
 ## 📄 License
 
-Free to use for learning and personal portfolios. If you fork it, a credit line is appreciated but not required.
+Personal demo project — free to fork for learning. Credit appreciated but not required. For the production codebase and its terms, see [My-Portfolio-Ronak-2.0](https://github.com/ronakmaniya/My-Portfolio-Ronak-2.0).
 
 ---
 
-Designed & built with ♥ and too much chai — by [Ronak Maniya](https://github.com/ronakmaniya).
+<p align="center">Designed & built with ♥ and too much chai</p>
